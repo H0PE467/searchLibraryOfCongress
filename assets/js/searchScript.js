@@ -9,6 +9,7 @@ gobackBtn.addEventListener("click", ()=>{
     window.location.assign("index.html")
 })
 
+//given a certain type and search word, it connects with the Library of Congress API and retrieves data
 async function getLibraryInfo(what,how = "") {
     if (how == "") {
         var link = "https://www.loc.gov/search/?q=" + what + "&fo=json";
@@ -58,6 +59,7 @@ async function getLibraryInfo(what,how = "") {
     }
 }
 
+//Adds a new card to the results
 function createNewCard(title,date,subjects,description,id) {
     
     var newCard = document.createElement("div")
@@ -110,12 +112,12 @@ function createNewCard(title,date,subjects,description,id) {
     // </div>
 }
 
+//Sets the tile on the "Showing results for " section
 function setTitle(searched) {
     searchTitle.textContent = "Showing results for " + searched;
 }
 
-
-
+//Gets info from the get method
 if(window.location.href.search("=")>0){
     var startQ = window.location.href.search("=")+1;
     var endQ = window.location.href.search("&");
