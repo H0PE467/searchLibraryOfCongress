@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="d-flex">
+        <aside class="d-inline"></aside>
+            <div class="custom-form-container w-25 p-3">
+                <h1>Library of Congress Search Engine</h1>
+                <form>
+                    <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Search!">
+                    </div>
+                    <div class="mb-3">
+                        <select class="form-select">
+                            <option value="" selected>Select a format...</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Click Me</button>
+                </form>
+                <button type="button" class="btn btn-danger w-100 mt-3"> ← Go back. </button>
+            </div>
+        </aside>
+
+        <div class="d-inline w-75 cards-container">
+            <h1 class="p-3 card-title">Showing results for</h1>
+
+            <div class="card p-3 m-3">
+                <h2> Title </h2>
+                <p><span>Date: </span>1966</p>
+                <p><span>Subject: </span>Math</p>
+                <p><span>Description: </span>Some description</p>
+                <button type="button" class="btn btn-dark my-2 readMore"> Read More </button>
+            </div>
+
+            <div class="card p-3 m-3">
+                <h2> Title </h2>
+                <p><span>Date: </span>1966</p>
+                <p><span>Subject: </span>Math</p>
+                <p><span>Description: </span>Some description</p>
+                <button type="button" class="btn btn-dark my-2 readMore"> Read More </button>
+            </div>
+
+            <div class="card p-3 m-3">
+                <h2> Title </h2>
+                <p><span>Date: </span>1966</p>
+                <p><span>Subject: </span>Math</p>
+                <p><span>Description: </span>Some description</p>
+                <button type="button" class="btn btn-dark my-2 readMore"> Read More </button>
+            </div>
+
+        </div>
+    </div>
+    
+
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+    <script src="./assets/js/searchScript.js"></script>
+</body>
+</html>

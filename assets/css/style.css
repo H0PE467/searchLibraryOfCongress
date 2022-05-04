@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(46,62,80);;
+}
+
+
+.custom-form-container{
+    background-color: rgb(217,232,232);;
+}
+
+.card{
+    background-color: rgb(217,232,232);;
+}
+
+.card-title{
+    color: rgb(217,232,232);;
+
+}
+
+.readMore{
+    width: 120px;
+    color: rgb(217,232,232);;
+}
+
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+
+span{
+    font-weight: bold;
+}
