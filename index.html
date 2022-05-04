@@ -13,17 +13,23 @@
     <div class="w-100 vh-100 d-flex justify-content-center align-items-center">
         <div class="custom-form-container w-50 p-3" align="center">
             <h1>Library of Congress Search Engine</h1>
-            <form>
+            <form method="get" action="./search-results.html">
                 <div class="mb-3">
-                  <input type="text" class="form-control" placeholder="Search!">
+                  <input name="q" type="text" class="form-control" placeholder="Search!" required>
                 </div>
                 <div class="mb-3">
-                    <select class="form-select">
+                    <select name="format" class="form-select">
                         <option value="" selected>Select a format...</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
+                        <option value="maps">Maps</option>
+                        <option value="audio">Audio Recordings</option>
+                        <option value="photos">Photos, Prints and Drawings</option>
+                        <option value="manuscripts">Manuscripts</option>
+                        <option value="newspapers">Newspapers</option>
+                        <option value="film-and-videos">Film ands Videos</option>
+                        <option value="notated-music">Printed Music</option>
+                        <option value="websites">Archived Websites</option>
+                    </select>
+
                 </div>
                 <button type="submit" class="btn btn-success w-100">Click Me</button>
               </form>

@@ -14,50 +14,33 @@
         <aside class="d-inline"></aside>
             <div class="custom-form-container w-25 p-3">
                 <h1>Library of Congress Search Engine</h1>
-                <form>
+
+                <form method="get">
                     <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Search!">
+                    <input name="q" type="text" class="form-control" placeholder="Search!" required>
                     </div>
                     <div class="mb-3">
-                        <select class="form-select">
+                        <select name="format" class="form-select">
                             <option value="" selected>Select a format...</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
+                            <option value="maps">Maps</option>
+                            <option value="audio">Audio Recordings</option>
+                            <option value="photos">Photos, Prints and Drawings</option>
+                            <option value="manuscripts">Manuscripts</option>
+                            <option value="newspapers">Newspapers</option>
+                            <option value="film-and-videos">Film ands Videos</option>
+                            <option value="notated-music">Printed Music</option>
+                            <option value="websites">Archived Websites</option>
                         </select>
                     </div>
                     <button type="submit" class="btn btn-success w-100">Click Me</button>
                 </form>
-                <button type="button" class="btn btn-danger w-100 mt-3"> ← Go back. </button>
+
+                <button type="button" class="btn btn-danger w-100 mt-3 goback"> ← Go back. </button>
             </div>
         </aside>
 
         <div class="d-inline w-75 cards-container">
             <h1 class="p-3 card-title">Showing results for</h1>
-
-            <div class="card p-3 m-3">
-                <h2> Title </h2>
-                <p><span>Date: </span>1966</p>
-                <p><span>Subject: </span>Math</p>
-                <p><span>Description: </span>Some description</p>
-                <button type="button" class="btn btn-dark my-2 readMore"> Read More </button>
-            </div>
-
-            <div class="card p-3 m-3">
-                <h2> Title </h2>
-                <p><span>Date: </span>1966</p>
-                <p><span>Subject: </span>Math</p>
-                <p><span>Description: </span>Some description</p>
-                <button type="button" class="btn btn-dark my-2 readMore"> Read More </button>
-            </div>
-
-            <div class="card p-3 m-3">
-                <h2> Title </h2>
-                <p><span>Date: </span>1966</p>
-                <p><span>Subject: </span>Math</p>
-                <p><span>Description: </span>Some description</p>
-                <button type="button" class="btn btn-dark my-2 readMore"> Read More </button>
-            </div>
 
         </div>
     </div>
